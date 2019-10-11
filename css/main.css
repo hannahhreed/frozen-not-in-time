@@ -74,7 +74,7 @@ img {
   width: 180px;
   top: 50px;
   z-index: 8;
-  left: calc(50% - 150px);
+  left: calc(50% - 105px);
 }
 
 .vanilla-fudge {
