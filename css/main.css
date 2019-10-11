@@ -119,3 +119,63 @@ img {
   }
 
 }
+
+@keyframes cone {
+
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 245px;
+  }
+
+}
+
+@keyframes mint-chip {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: 140px;
+  }
+
+}
+
+@keyframes chocolate-chip {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: 50px;
+  }
+
+}
+
+@keyframes vanilla-fudge {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: -30px;
+  }
+
+}
+
+@keyframes cherry {
+
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: -85px;
+  }
+
+}
