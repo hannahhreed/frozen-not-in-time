@@ -26,7 +26,7 @@ p {
   background-color: rgba(153, 0, 115, .2);
 }
 
-.banner {
+.outer-banner {
   padding-left: 3em;
   padding-top: 3em;
   padding-bottom: 5em;
@@ -43,25 +43,48 @@ img {
 
 .ice-cream {
   position: relative;
+  min-height: 480px;
 }
 
 .text {
   transform-origin: left center;
   text-shadow: 1px 2px rgba(0, 0, 0, .2);
   margin: 0;
-  animation: fade .5s .5s linear forwards;
+  animation: fade .5s .5s ease-in forwards;
   opacity: 0;
 }
 
 .cone {
-  animation: cone 300ms linear forwards;
-  width: 180px;
-  top: 245px;
-  z-index: 20;
-  left: calc(50% - 110px);
+  animation: cone 300ms ease-in forwards;
 }
 
 .mint-chip {
+  animation: mint-chip 300ms 300ms ease-in forwards;
+}
+
+.chocolate-chip {
+  animation: chocolate-chip 400ms 300ms ease-in forwards;
+}
+
+.vanilla-fudge {
+  animation: vanilla-fudge 500ms 300ms ease-in forwards;
+}
+
+.cherry {
+  animation: cherry 600ms 300ms ease-in forwards;
+}
+
+.scoop {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  height: 180px;
+  width: 180px;
+
+  transform: translateX(-50%);
+}
+
+/* .mint-chip {
   animation: mint-chip 400ms linear forwards;
   width: 180px;
   top: 140px;
@@ -91,7 +114,7 @@ img {
   top: -85px;
   z-index: 10;
   left: calc(50% - 100px);
-}
+} */
 
 @media only screen and (min-width: 90em) {
 
