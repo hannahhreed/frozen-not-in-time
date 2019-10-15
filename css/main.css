@@ -28,13 +28,14 @@ p {
 
 .outer-banner {
   padding-left: 3em;
-  padding-top: 3em;
+  padding-top: 0em;
   padding-bottom: 5em;
   background-image: repeating-linear-gradient(-33deg, #c9fcff, #c9fcff 9px, #d4fdff 9px, #d4fdff 20px);
   overflow: hidden;
   border-top: 10px solid #b3fbff;
   border-bottom: 10px solid #b3fbff;
   height: 500px;
+
 }
 
 img {
