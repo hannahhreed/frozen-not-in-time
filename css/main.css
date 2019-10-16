@@ -27,19 +27,9 @@ p {
 }
 
 .outer-banner {
-  padding-left: 3em;
-  padding-top: 0em;
-  padding-bottom: 5em;
   background-image: repeating-linear-gradient(-33deg, #c9fcff, #c9fcff 9px, #d4fdff 9px, #d4fdff 20px);
-  overflow: hidden;
   border-top: 10px solid #b3fbff;
   border-bottom: 10px solid #b3fbff;
-  height: 500px;
-
-}
-
-img {
-  position: absolute;
 }
 
 .ice-cream {
@@ -56,6 +46,7 @@ img {
 }
 
 .cone {
+  z-index: 100;
   animation: cone 300ms ease-in forwards;
 }
 
@@ -64,15 +55,15 @@ img {
 }
 
 .chocolate-chip {
-  animation: chocolate-chip 400ms 300ms ease-in forwards;
+  animation: chocolate-chip 300ms 600ms ease-in forwards;
 }
 
 .vanilla-fudge {
-  animation: vanilla-fudge 500ms 300ms ease-in forwards;
+  animation: vanilla-fudge 200ms 900ms ease-in forwards;
 }
 
 .cherry {
-  animation: cherry 600ms 300ms ease-in forwards;
+  animation: cherry 150ms 1500ms ease-in forwards;
 }
 
 .scoop {
@@ -117,7 +108,7 @@ img {
   left: calc(50% - 100px);
 } */
 
-@media only screen and (min-width: 90em) {
+/* @media only screen and (min-width: 90em) {
 
   .banner {
     padding-left: 10em;
@@ -128,7 +119,7 @@ img {
     padding-top: 2em;
   }
 
-}
+} */
 
 @keyframes fade {
 
@@ -147,11 +138,11 @@ img {
 @keyframes cone {
 
   0% {
-    top: -100px;
+    bottom: 100%;
   }
 
   100% {
-    top: 245px;
+    bottom: 0;
   }
 
 }
@@ -159,16 +150,52 @@ img {
 @keyframes mint-chip {
 
   0% {
-    top: -1000px;
+    bottom: 100%;
   }
 
   100% {
-    top: 140px;
+    bottom: 104px;
   }
 
 }
 
 @keyframes chocolate-chip {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 200px;
+  }
+
+}
+
+@keyframes vanilla-fudge {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 275px;
+  }
+
+}
+
+@keyframes cherry {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 355px;
+  }
+
+}
+
+/* @keyframes chocolate-chip {
 
   0% {
     top: -1000px;
@@ -202,4 +229,4 @@ img {
     top: -85px;
   }
 
-}
+} */
